@@ -1,0 +1,15 @@
+testbed:
+  name: TRM
+devices:
+  leaf1:
+    os:    iosxe
+    type: 'iol'
+    platform: l2iol
+    connections:
+      a:
+        ip: 127.0.0.1
+        port: 22312
+        protocol: telnet
+    custom:
+      abstraction:
+        order: [os, platform]
